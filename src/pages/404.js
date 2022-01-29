@@ -2,12 +2,14 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import { Box, Button, Container, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Search from 'src/components/Search'
+import SearchResult from 'src/components/SearchResult';
 
 const NotFound = () => (
   <>
     <Head>
       <title>
-        404 | Material Kit
+        404 | Material Kit?
       </title>
     </Head>
     <Box
@@ -32,7 +34,7 @@ const NotFound = () => (
             color="textPrimary"
             variant="h1"
           >
-            404: The page you are looking for isn’t here
+            404: The page you are looking for isn't here5555!!!!!!!!!!!
           </Typography>
           <Typography
             align="center"
@@ -40,7 +42,7 @@ const NotFound = () => (
             variant="subtitle2"
           >
             You either tried some shady route or you came here by mistake.
-            Whichever it is, try using the navigation
+            Whichever it is, try using the navigation!
           </Typography>
           <Box sx={{ textAlign: 'center' }}>
             <img
@@ -64,12 +66,14 @@ const NotFound = () => (
               sx={{ mt: 3 }}
               variant="contained"
             >
-              Go back to dashboard
+              Go back to dashboard...!
             </Button>
           </NextLink>
         </Box>
       </Container>
     </Box>
+    <Search />
+    <SearchResult />
   </>
 );
 
